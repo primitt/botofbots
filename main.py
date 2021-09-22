@@ -2,6 +2,7 @@ import discord
 import requests
 import time
 from datetime import datetime
+client.run()
 
 # datetime object containing current date and time
 @client.event
@@ -10,9 +11,6 @@ async def on_ready():
     await client.change_presence(
         activity=discord.Game(
             name="with svms" + PREFIX + "help"))
-client.run()
-# Time and date
-
     @client.event
     async def on_message(message):
         if message.author == client.user:
