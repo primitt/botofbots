@@ -4,6 +4,8 @@ import time
 from datetime import datetime
 from dotenv import load_dotenv
 import os
+import random
+import json
 TOKEN = os.getenv('TOKEN')
 client = discord.Client()
 
@@ -25,7 +27,10 @@ async def on_ready():
                 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
                 await message.channel.send(dt_string)
 
-client.run("ODkwMTA0MjkxMTcwMzUzMTYy.YUq8OA.dr1roOR52mUccsSzHCuZKS_JlyY")
+            if command[0].lower() == "random"
+                random.randint("")
+
+client.run(TOKEN)
 
 
 
