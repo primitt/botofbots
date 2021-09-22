@@ -13,22 +13,19 @@ async def on_ready():
 client.run()
 # Time and date
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
+    @client.event
+    async def on_message(message):
+        if message.author == client.user:
+            return
     
-    if message.content.startswith("svms"):
-        command = message.content.strip("svko ").split(" ")
+        if message.content.startswith("svms"):
+            command = message.content.strip("svko ").split(" ")
     
-        if command[0].lower() == "datetime"
-        
-    now = datetime.now()
- 
-    print("now =", now)
+            if command[0].lower() == "datetime":    
+                now = datetime.now()
+                dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+                await message.channel.send(dt_string)
 
-    # dd/mm/YY H:M:S
-    dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-    await.message.channel.send(dt_string)
+client.run("ODkwMTA0MjkxMTcwMzUzMTYy.YUq8OA.tcs2C5u6GUstQHOwYuJe9XAuAEs")
 
-    client.run("ODkwMTA0MjkxMTcwMzUzMTYy.YUq8OA.tcs2C5u6GUstQHOwYuJe9XAuAEs")
+
