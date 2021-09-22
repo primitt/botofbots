@@ -30,3 +30,5 @@ async def on_message(message):
     # dd/mm/YY H:M:S
     dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
     await.message.channel.send(dt_string)
+
+    client.run("ODkwMTA0MjkxMTcwMzUzMTYy.YUq8OA.tcs2C5u6GUstQHOwYuJe9XAuAEs")
