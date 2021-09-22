@@ -35,6 +35,11 @@ async def on_ready():
                 else:
                     await message.channel.send("Sorry, please format your response like this: "
                     + "\n <number>, <number>")
+                
+            if command[0].lower() == "help":
+                await message.channel.send("**Commands** /n"
+                + "help <command> - Specific help for a command")
+                
             #end of code
 
 
