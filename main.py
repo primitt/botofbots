@@ -32,8 +32,8 @@ async def on_ready():
                     randomnum = r.randint(command[1])
                     numint = "The random number you chose from the numbers: ", command[1], "are", randomnumber
                     await message.channel.send()
-                    else:
-                        await message.channel.send("Sorry, please format your response like this: "
+                else
+                    await message.channel.send("Sorry, please format your response like this: "
                     + "\n <number>, <number>")
                 
             if command[0].lower() == "help":
