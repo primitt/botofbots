@@ -28,12 +28,10 @@ async def on_ready():
                 await message.channel.send(dt_string)
 
             if command[0].lower() == "random": #random number gen
-                try:
                     randomnum = r.randint(command[1])
                     numint = "The random number you chose from the numbers: ", command[1], "are", randomnumber
                     await message.channel.send()
-                else
-                    await message.channel.send("Sorry, please format your response like this: "
+                        await message.channel.send("Sorry, please format your response like this: "
                     + "\n <number>, <number>")
                 
             if command[0].lower() == "help":
